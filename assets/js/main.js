@@ -90,3 +90,11 @@ function initAnimacaoScroll() {
   }
 }
 initAnimacaoScroll();
+function initPreLoad(){
+  //Pre Loader
+  window.onload = function () {
+    const loader = document.querySelector('[data-loader="pre"]');
+    loader.classList.remove('current');
+  }
+}
+initPreLoad();
