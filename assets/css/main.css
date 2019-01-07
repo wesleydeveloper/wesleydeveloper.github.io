@@ -242,6 +242,7 @@ main>section{
 #about div{
   margin: 0 5px 1rem;
 }
+#about article h3,
 #about div h3{
   padding: 1rem 0;
   text-align: center;
