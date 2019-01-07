@@ -319,8 +319,19 @@ main>section{
   }
 }
 
-.scroll{
+.js .scroll{
   overflow: hidden !important;
+}
+
+.js [data-scroll="section"] {
+  opacity: 0;
+  transform: translate3d(-30px, 0, 0);
+  transition: .3s;
+}
+
+.js [data-scroll="section"].current {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
 }
 
 /* CSS Pre loader

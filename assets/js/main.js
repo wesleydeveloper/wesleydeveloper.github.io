@@ -73,7 +73,7 @@ function initTabNav() {
 initTabNav();
 
 function initAnimacaoScroll() {
-  const sections = document.querySelectorAll('.js-scroll');
+  const sections = document.querySelectorAll('[data-scroll="section"]');
   if(sections.length) {
     const windowMetade = window.innerHeight * 0.6;
 
