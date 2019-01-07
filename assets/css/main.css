@@ -57,7 +57,6 @@ header {
   position: relative;
   background-color: var(--black);
   color: var(--white);
-  box-sizing: content-box;
 }
 section h2{
   text-align: center;
@@ -321,6 +320,29 @@ main>section{
   }
 }
 
+footer{
+  background-color: var(--black);
+  color: var(--white);
+}
+footer p{
+  padding: 1rem;
+  text-align: center;
+}
+footer p:first-child{
+  padding-bottom: 0.5;
+}
+footer p:last-child{
+  padding-top: 0.5;
+}
+footer p a{
+  color: var(--white);
+  text-decoration: unset;
+}
+footer p img{
+  width: 16px;
+  display: inline;
+}
+
 .js .scroll{
   overflow: hidden !important;
 }
@@ -437,12 +459,24 @@ main>section{
     padding: 1rem;
   }
   #about div div img{
-    width: 100px;
-    height: 100px;
+    width: 82px;
+    height: 82px;
   }
   .services-tabs-section{
     border: 1px double var(--white);
     padding: 2rem;
+  }
+
+  footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+  }
+  footer p:first-child{
+    text-align: left;
+  }
+  footer p:last-child{
+    text-align: right;
   }
 }
 
