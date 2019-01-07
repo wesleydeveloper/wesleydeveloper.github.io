@@ -1,20 +1,24 @@
 function initToogleMenu(){
   const toogle = document.querySelector('[data-menu="toogle"]')
   const nav = document.querySelector('[data-menu="nav"]')
+  let scroll = document.querySelector('body');
   
   toogle.addEventListener("click", (e) => {
       e.preventDefault();
       toogle.classList.toggle('current');
       if(toogle.classList.contains('current')){
         nav.classList.add('current')
+        scroll.classList.add('scroll')
       }else{
         nav.classList.remove('current')
+        scroll.classList.remove('scroll')
       }
   });
 
   nav.addEventListener("click", () => {
     toogle.classList.remove('current')
     nav.classList.remove('current')
+    scroll.classList.remove('scroll')
   });
 }
 initToogleMenu();
@@ -94,7 +98,9 @@ function initPreLoad(){
   //Pre Loader
   window.onload = function () {
     const loader = document.querySelector('[data-loader="pre"]');
+    let scroll = document.querySelector('body');
     loader.classList.remove('current');
+    scroll.classList.remove('scroll')
   }
 }
 initPreLoad();
