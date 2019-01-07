@@ -57,6 +57,8 @@ header {
   position: relative;
   background-color: var(--black);
   color: var(--white);
+  min-height: 100vh;
+  width: 100%;
 }
 section h2{
   text-align: center;
@@ -81,6 +83,7 @@ main>section{
   font-weight: 900;
   color: var(--white);
   z-index: 11;
+  margin-left: 0.3rem;
 }
 
 .nav {
@@ -174,27 +177,31 @@ main>section{
   transform: translate3d(0, 0, 0) scale(0.1, 1);
 }
 .hero{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 5rem;
-  padding-bottom: 5rem;
+  display: block;
+  position: absolute;
+  width: 300px;
+  height: 500px;
+  top: 50%;
+  left: 50%;
+  margin: -150px 0 0 -150px;
 }
 .hero>img{
   width: 200px;
   height: 200px;
   border: 1px solid var(--white);
   border-radius: 100px;
+  margin: 0 auto;
 }
 .hero h1{
   padding: 1rem 0;
+  text-align: center;
+  font-size: 3rem;
 }
 .hero div ul{
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin: 0 1rem;
 }
 .hero div ul li{
   margin-left: 0.5rem;
@@ -526,3 +533,18 @@ footer p img{
   }
 }
 
+@media(min-width: 1200px){
+  .brand{
+    margin-left: 2rem;
+    margin-top: 1rem;
+  }
+  .nav{
+    margin-right: 1rem;
+  }
+  #about div div img{
+    width: 83px;
+    height: 83px;
+  }
+  
+
+}
